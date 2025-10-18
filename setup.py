@@ -25,8 +25,8 @@ def run_command(command, shell=True):
 def check_python_version():
     """检查 Python 版本"""
     version = sys.version_info
-    if version.major < 3 or (version.major == 3 and version.minor < 13):
-        print("❌ 错误: 需要 Python 3.13 或更高版本")
+    if version.major < 3 or (version.major == 3 and version.minor < 12):
+        print("❌ 错误: 需要 Python 3.12 或更高版本")
         print(f"当前版本: {version.major}.{version.minor}.{version.micro}")
         return False
     print(f"✓ Python 版本: {version.major}.{version.minor}.{version.micro}")
