@@ -1,0 +1,11 @@
+{
+  "deployment_id": null,
+  "display_name": "weight-loss-advisor",
+  "description": "减肥咨询智能体",
+  "project_id": "vertexai-gov-20251012",
+  "location": "us-central1",
+  "staging_bucket": "gs://vertexai-gov-poc-20251012",
+  "temp_folder": "D:\\zyz-temp",
+  "deployment_time": "D:\\AIagents\\weight_loss_advisor",
+  "full_output": "Copying agent source code...\nCopying agent source code complete.\nInitializing Vertex AI...\nResolving files and dependencies...\nCreating D:\\zyz-temp\\weight_loss_advisor\\requirements.txt...\nCreated D:\\zyz-temp\\weight_loss_advisor\\requirements.txt\nReading environment variables from D:\\AIagents\\weight_loss_advisor\\.env\nIgnoring GOOGLE_CLOUD_PROJECT in .env as `--project` was explicitly passed and takes precedence\nIgnoring GOOGLE_CLOUD_LOCATION in .env as `--region` was explicitly passed and takes precedence\nVertex AI initialized.\nCreated D:\\zyz-temp\\agent_engine_app.py\nFiles and dependencies resolved\nDeploying to agent engine...\nReading requirements from requirements='D:\\\\zyz-temp\\\\weight_loss_advisor\\\\requirements.txt'\nRead the following lines: ['google-cloud-aiplatform[adk,agent_engines]']\nIdentified the following requirements: {'cloudpickle': '3.1.1', 'pydantic': '2.12.0', 'google-cloud-aiplatform': '1.120.0'}\nThe following requirements are missing: {'cloudpickle', 'pydantic'}\nThe following requirements are appended: {'cloudpickle==3.1.1', 'pydantic==2.12.0'}\nThe final list of requirements: ['google-cloud-aiplatform[adk,agent_engines]', 'cloudpickle==3.1.1', 'pydantic==2.12.0']\nUsing bucket vertexai-gov-poc-20251012\nWrote to gs://vertexai-gov-poc-20251012/agent_engine/agent_engine.pkl\nWriting to gs://vertexai-gov-poc-20251012/agent_engine/requirements.txt\nCreating in-memory tarfile of extra_packages\nWriting to gs://vertexai-gov-poc-20251012/agent_engine/dependencies.tar.gz\nCleaning up the temp folder: D:\\zyz-temp\n"
+}

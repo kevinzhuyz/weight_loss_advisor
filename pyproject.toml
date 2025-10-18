@@ -1,0 +1,41 @@
+[project]
+name = "weight-loss-advisor"
+version = "0.1.0"
+description = "weight-loss-advisor to provide the constructive suggestions to user"
+authors = [
+    {name = "kevinzhuyz",email = "zhu_yongzhen@hotmail.com"}
+]
+license = {text = "Apache License 2.0"}
+readme = "README.md"
+requires-python = ">=3.13"
+
+[tool.poetry.dependencies]
+google-cloud-aiplatform = { version = "^1.93.0", extras = [
+    "adk",
+    "agent-engines",
+] }
+google-genai = "^1.9.0"
+pydantic = "^2.10.6"
+python-dotenv = "^1.0.1"
+google-adk = "^1.0.0"
+requests = "^2.32.5"
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+black = "^25.1.0"
+google-adk = { version = "^1.0.0", extras = ["eval"] }
+pytest-asyncio = "^0.26.0"
+
+[tool.poetry.group.deployment]
+optional = true
+
+[tool.poetry.group.deployment.dependencies]
+absl-py = "^2.2.1"
+
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
