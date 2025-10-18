@@ -23,17 +23,47 @@ weight_loss_advisor/
 └── pyproject.toml             # 项目配置
 ```
 
-## 使用方法
+## 快速开始
 
-1. 安装依赖：
+### 方法一：自动安装（推荐）
 ```bash
-pip install -r requirements.txt
+# 克隆仓库
+git clone https://github.com/kevinzhuyz/weight_loss_advisor.git
+cd weight_loss_advisor
+
+# 运行自动安装脚本
+python setup.py
 ```
 
-2. 运行智能体：
-```python
-from weight_loss_advisor.agent import root_agent
+### 方法二：手动安装
+```bash
+# 1. 克隆仓库
+git clone https://github.com/kevinzhuyz/weight_loss_advisor.git
+cd weight_loss_advisor
+
+# 2. 安装 Poetry（如果未安装）
+# Windows:
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+
+# macOS/Linux:
+curl -sSL https://install.python-poetry.org | python3 -
+
+# 3. 安装依赖
+poetry install
+
+# 4. 配置环境变量
+cp env.template .env
+# 编辑 .env 文件，填入你的配置
+
+# 5. 运行智能体
+poetry run python -m weight_loss_advisor.agent
 ```
+
+## 详细说明
+
+- 📖 [完整安装指南](SETUP_GUIDE.md)
+- 🚀 [部署指南](deployment/DEPLOYMENT_GUIDE.md)
+- ☁️ [云部署指南](deployment/CLOUD_DEPLOYMENT_GUIDE.md)
 
 ## 免责声明
 
